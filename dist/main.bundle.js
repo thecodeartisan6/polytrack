@@ -16858,7 +16858,7 @@
 			}
 			createGroundPlane() {
 				if (null != hp(this, ep, "f")) throw "Ground is already initialized";
-				const e = new Ammo.btVector3(0, 1, 0),
+				const e = new Ammo.btVector3(0, -5, 0),
 					t = new Ammo.btStaticPlaneShape(e, 0);
 				Ammo.destroy(e);
 				const i = new Ammo.btTransform;
