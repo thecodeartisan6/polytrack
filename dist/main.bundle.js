@@ -17265,7 +17265,7 @@
 					down: s,
 					left: a
 				}), $p(this, zp, "f").increment()), n && !$p(this, Op, "f") && $p(this, Fp, "f")) {
-				const e = 4e3;
+				const e = 5 * 4e3;
 				$p(this, Pp, "f").applyEngineForce(e, 10), $p(this, Pp, "f").applyEngineForce(e, 15)
 			} else $p(this, Pp, "f").applyEngineForce(0, 10), $p(this, Pp, "f").applyEngineForce(0, 15);
 			if (s && !$p(this, Op, "f") && $p(this, Fp, "f"))
