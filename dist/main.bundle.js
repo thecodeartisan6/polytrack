@@ -16858,7 +16858,7 @@
 			}
 			createGroundPlane() {
 				if (null != hp(this, ep, "f")) throw "Ground is already initialized";
-				const e = new Ammo.btVector3(0, 5, 0),
+				const e = new Ammo.btVector3(0, 1, 0),
 					t = new Ammo.btStaticPlaneShape(e, 0);
 				Ammo.destroy(e);
 				const i = new Ammo.btTransform;
@@ -17291,7 +17291,7 @@
 		};
 		const em = class {
 			constructor(e, t, i, n, r, s, a, o) {
-				Cp.add(this), kp.set(this, void 0), Rp.set(this, void 0), Pp.set(this, void 0), Lp.set(this, void 0), Ip.set(this, void 0), Np.set(this, void 0), Up.set(this, 0), Dp.set(this, new Bf), Op.set(this, !1), Fp.set(this, !1), zp.set(this, new vp), Bp.set(this, 0), Wp.set(this, !1), Hp.set(this, void 0), Vp.set(this, void 0), Gp.set(this, []), jp.set(this, []), Qp(this, Np, s, "f"), Qp(this, Rp, new up, "f"), $p(this, Rp, "f").createGroundPlane(), $p(this, Rp, "f").createMountains(e, t), Qp(this, kp, new Ap($p(this, Rp, "f"), i, n), "f"), $p(this, Rp, "f").addPreStepEventListener(Qp(this, Hp, (e => {
+				Cp.add(this), kp.set(this, void 0), Rp.set(this, void 0), Pp.set(this, void 0), Lp.set(this, void 0), Ip.set(this, void 0), Np.set(this, void 0), Up.set(this, 0), Dp.set(this, new Bf), Op.set(this, !1), Fp.set(this, !1), zp.set(this, new vp), Bp.set(this, 0), Wp.set(this, !1), Hp.set(this, void 0), Vp.set(this, void 0), Gp.set(this, []), jp.set(this, []), Qp(this, Np, s, "f"), Qp(this, Rp, new up, "f"), $p(this, Rp, "f").createGroundPlane(), /*$p(this, Rp, "f").createMountains(e, t),*/ Qp(this, kp, new Ap($p(this, Rp, "f"), i, n), "f"), $p(this, Rp, "f").addPreStepEventListener(Qp(this, Hp, (e => {
 					null != $p(this, Pp, "f") && ($p(this, Rp, "f").activePhysicsAt(this.getPosition()), $p(this, Cp, "m", Zp).call(this), $p(this, Cp, "m", Jp).call(this, e, a))
 				}), "f")), $p(this, Rp, "f").addPostStepEventListener(Qp(this, Vp, (e => {
 					var t;
