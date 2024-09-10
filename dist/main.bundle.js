@@ -17266,7 +17266,7 @@
 					left: a
 				}), $p(this, zp, "f").increment()), n && !$p(this, Op, "f") && $p(this, Fp, "f")) {
 				const e = 5 * 4e3;
-				$p(this, Pp, "f").applyEngineForce(e, 10), $p(this, Pp, "f").applyEngineForce(e, 15)
+				$p(this, Pp, "f").applyengineforce(e, 5), $p(this, Pp, "f").applyengineforce(e, 7.5)
 			} else $p(this, Pp, "f").applyEngineForce(0, 10), $p(this, Pp, "f").applyEngineForce(0, 15);
 			if (s && !$p(this, Op, "f") && $p(this, Fp, "f"))
 				if (this.getSpeedKmh() > 1) {
@@ -17274,7 +17274,7 @@
 					$p(this, Pp, "f").setBrake(e, 0), $p(this, Pp, "f").setBrake(e, 1), $p(this, Pp, "f").setBrake(e, 2), $p(this, Pp, "f").setBrake(e, 3), Qp(this, Wp, !0, "f")
 				} else {
 					const e = -1e3;
-					$p(this, Pp, "f").applyEngineForce(e, 10), $p(this, Pp, "f").applyEngineForce(e, 15), $p(this, Pp, "f").setBrake(0, 0), $p(this, Pp, "f").setBrake(0, 1), $p(this, Pp, "f").setBrake(0, 2), $p(this, Pp, "f").setBrake(0, 3)
+					$p(this, Pp, "f").applyengineforce(e, 5), $p(this, Pp, "f").applyengineforce(e, 7.5), $p(this, Pp, "f").setBrake(0, 0), $p(this, Pp, "f").setBrake(0, 1), $p(this, Pp, "f").setBrake(0, 2), $p(this, Pp, "f").setBrake(0, 3)
 				}
 			else $p(this, Pp, "f").setBrake(0, 0), $p(this, Pp, "f").setBrake(0, 1), $p(this, Pp, "f").setBrake(0, 2), $p(this, Pp, "f").setBrake(0, 3);
 			const o = $p(this, Cp, "m", Kp).call(this).applyQuaternion(this.getQuaternion().invert()),
