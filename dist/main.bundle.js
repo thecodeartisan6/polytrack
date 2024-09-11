@@ -16840,7 +16840,7 @@
 		class dp {
 			constructor() {
 				Wf.add(this), Vf.set(this, void 0), Gf.set(this, void 0), jf.set(this, void 0), Xf.set(this, void 0), qf.set(this, void 0), Yf.set(this, void 0), Kf.set(this, []), Zf.set(this, []), Jf.set(this, new Map), $f.set(this, []), ep.set(this, null), tp.set(this, null), ip.set(this, 0), np.set(this, 0), rp.set(this, 1e3), sp.set(this, []), ap.set(this, []), cp(this, Vf, new Ammo.btDefaultCollisionConfiguration, "f"), cp(this, Gf, new Ammo.btCollisionDispatcher(hp(this, Vf, "f")), "f"), cp(this, jf, new Ammo.btDbvtBroadphase, "f"), cp(this, Xf, new Ammo.btSequentialImpulseConstraintSolver, "f"), cp(this, qf, new Ammo.btDiscreteDynamicsWorld(hp(this, Gf, "f"), hp(this, jf, "f"), hp(this, Xf, "f"), hp(this, Vf, "f")), "f"), cp(this, Yf, new Ammo.btGhostPairCallback, "f"), hp(this, qf, "f").getPairCache().setInternalGhostPairCallback(hp(this, Yf, "f"));
-				const e = new Ammo.btVector3(0, -9.82, 0);
+				const e = new Ammo.btVector3(0, -4.91, 0);
 				hp(this, qf, "f").setGravity(e), Ammo.destroy(e)
 			}
 			dispose() {
@@ -17291,7 +17291,7 @@
 		};
 		const em = class {
 			constructor(e, t, i, n, r, s, a, o) {
-				Cp.add(this), kp.set(this, void 0), Rp.set(this, void 0), Pp.set(this, void 0), Lp.set(this, void 0), Ip.set(this, void 0), Np.set(this, void 0), Up.set(this, 0), Dp.set(this, new Bf), Op.set(this, !1), Fp.set(this, !1), zp.set(this, new vp), Bp.set(this, 0), Wp.set(this, !1), Hp.set(this, void 0), Vp.set(this, void 0), Gp.set(this, []), jp.set(this, []), Qp(this, Np, s, "f"), Qp(this, Rp, new up, "f"), $p(this, Rp, "f").createGroundPlane(), $p(this, Rp, "f").createMountains(e, t), Qp(this, kp, new Ap($p(this, Rp, "f"), i, n), "f"), $p(this, Rp, "f").addPreStepEventListener(Qp(this, Hp, (e => {
+				Cp.add(this), kp.set(this, void 0), Rp.set(this, void 0), Pp.set(this, void 0), Lp.set(this, void 0), Ip.set(this, void 0), Np.set(this, void 0), Up.set(this, 0), Dp.set(this, new Bf), Op.set(this, !1), Fp.set(this, !1), zp.set(this, new vp), Bp.set(this, 0), Wp.set(this, !1), Hp.set(this, void 0), Vp.set(this, void 0), Gp.set(this, []), jp.set(this, []), Qp(this, Np, s, "f"), Qp(this, Rp, new up, "f"), $p(this, Rp, "f").createGroundPlane(), /*$p(this, Rp, "f").createMountains(e, t),*/ Qp(this, kp, new Ap($p(this, Rp, "f"), i, n), "f"), $p(this, Rp, "f").addPreStepEventListener(Qp(this, Hp, (e => {
 					null != $p(this, Pp, "f") && ($p(this, Rp, "f").activePhysicsAt(this.getPosition()), $p(this, Cp, "m", Zp).call(this), $p(this, Cp, "m", Jp).call(this, e, a))
 				}), "f")), $p(this, Rp, "f").addPostStepEventListener(Qp(this, Vp, (e => {
 					var t;
