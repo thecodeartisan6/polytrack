@@ -17889,7 +17889,7 @@
 			}
 			static initResources(e) {
 				e.addResource();
-				(new oc).load("models/scene.glb", (t => {
+				(new oc).load("models/car.glb", (t => {
 					function i(e) {
 						const i = t.scene.getObjectByName(e);
 						if (null == i) throw 'Mesh "' + e + '" does not exist';
