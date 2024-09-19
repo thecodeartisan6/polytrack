@@ -17315,7 +17315,7 @@
 				Qp(this, Ip, $p(this, Cp, "m", Xp).call(this, r), "f"), $p(this, Ip, "f").calculateLocalInertia(400, h);
 				const d = new Ammo.btRigidBodyConstructionInfo(400, c, $p(this, Ip, "f"), h),
 					u = new Ammo.btRigidBody(d);
-				Ammo.destroy(d), Ammo.destroy(h), u.setDamping(0, 0), u.setActivationState(4), $p(this, Rp, "f").world.addRigidBody(u, 1, 2), Qp(this, Lp, u, "f");
+				Ammo.destroy(d), Ammo.destroy(h), u.setDamping(.5, .5), u.setActivationState(4), $p(this, Rp, "f").world.addRigidBody(u, 1, 2), Qp(this, Lp, u, "f");
 				const f = new Ammo.btVehicleTuning,
 					p = new Ammo.btDefaultVehicleRaycaster($p(this, Rp, "f").world),
 					m = new Ammo.btRaycastVehicle(f, u, p);
@@ -17333,7 +17333,7 @@
 					}
 					const i = "WheelFL" == e || "WheelFR" == e,
 						n = m.addWheel(t, g, v, .12, .331, f, i);
-					Ammo.destroy(t), n.set_m_maxSuspensionTravelCm(1e3), n.set_m_maxSuspensionForce(1e6), n.set_m_suspensionStiffness(50), n.set_m_wheelsDampingRelaxation(5), n.set_m_wheelsDampingCompression(200), n.set_m_frictionSlip(3), n.set_m_rollInfluence(2)
+					Ammo.destroy(t), n.set_m_maxSuspensionTravelCm(1e3), n.set_m_maxSuspensionForce(1e6), n.set_m_suspensionStiffness(50), n.set_m_wheelsDampingRelaxation(5), n.set_m_wheelsDampingCompression(200), n.set_m_frictionSlip(3), n.set_m_rollInfluence(1)
 				})), Ammo.destroy(g), Ammo.destroy(v);
 				const w = new Ammo.btTransform;
 				w.setIdentity();
