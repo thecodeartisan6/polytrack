@@ -17315,7 +17315,7 @@
 				Qp(this, Ip, $p(this, Cp, "m", Xp).call(this, r), "f"), $p(this, Ip, "f").calculateLocalInertia(400, h);
 				const d = new Ammo.btRigidBodyConstructionInfo(400, c, $p(this, Ip, "f"), h),
 					u = new Ammo.btRigidBody(d);
-				Ammo.destroy(d), Ammo.destroy(h), u.setDamping(.5, .5), u.setActivationState(4), $p(this, Rp, "f").world.addRigidBody(u, 1, 2), Qp(this, Lp, u, "f");
+				Ammo.destroy(d), Ammo.destroy(h), u.setDamping(.05, .05), u.setActivationState(4), $p(this, Rp, "f").world.addRigidBody(u, 1, 2), Qp(this, Lp, u, "f");
 				const f = new Ammo.btVehicleTuning,
 					p = new Ammo.btDefaultVehicleRaycaster($p(this, Rp, "f").world),
 					m = new Ammo.btRaycastVehicle(f, u, p);
