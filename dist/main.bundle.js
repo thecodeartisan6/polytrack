@@ -16840,7 +16840,7 @@
 		class dp {
 			constructor() {
 				Wf.add(this), Vf.set(this, void 0), Gf.set(this, void 0), jf.set(this, void 0), Xf.set(this, void 0), qf.set(this, void 0), Yf.set(this, void 0), Kf.set(this, []), Zf.set(this, []), Jf.set(this, new Map), $f.set(this, []), ep.set(this, null), tp.set(this, null), ip.set(this, 0), np.set(this, 0), rp.set(this, 1e3), sp.set(this, []), ap.set(this, []), cp(this, Vf, new Ammo.btDefaultCollisionConfiguration, "f"), cp(this, Gf, new Ammo.btCollisionDispatcher(hp(this, Vf, "f")), "f"), cp(this, jf, new Ammo.btDbvtBroadphase, "f"), cp(this, Xf, new Ammo.btSequentialImpulseConstraintSolver, "f"), cp(this, qf, new Ammo.btDiscreteDynamicsWorld(hp(this, Gf, "f"), hp(this, jf, "f"), hp(this, Xf, "f"), hp(this, Vf, "f")), "f"), cp(this, Yf, new Ammo.btGhostPairCallback, "f"), hp(this, qf, "f").getPairCache().setInternalGhostPairCallback(hp(this, Yf, "f"));
-				const e = new Ammo.btVector3(0, -9.82, 0);
+				const e = new Ammo.btVector3(0, -19.64, 0);
 				hp(this, qf, "f").setGravity(e), Ammo.destroy(e)
 			}
 			dispose() {
@@ -17315,7 +17315,7 @@
 				Qp(this, Ip, $p(this, Cp, "m", Xp).call(this, r), "f"), $p(this, Ip, "f").calculateLocalInertia(400, h);
 				const d = new Ammo.btRigidBodyConstructionInfo(400, c, $p(this, Ip, "f"), h),
 					u = new Ammo.btRigidBody(d);
-				Ammo.destroy(d), Ammo.destroy(h), u.setDamping(.05, .05), u.setActivationState(4), $p(this, Rp, "f").world.addRigidBody(u, 1, 2), Qp(this, Lp, u, "f");
+				Ammo.destroy(d), Ammo.destroy(h), u.setDamping(0, 0), u.setActivationState(4), $p(this, Rp, "f").world.addRigidBody(u, 1, 2), Qp(this, Lp, u, "f");
 				const f = new Ammo.btVehicleTuning,
 					p = new Ammo.btDefaultVehicleRaycaster($p(this, Rp, "f").world),
 					m = new Ammo.btRaycastVehicle(f, u, p);
@@ -17333,7 +17333,7 @@
 					}
 					const i = "WheelFL" == e || "WheelFR" == e,
 						n = m.addWheel(t, g, v, .12, .331, f, i);
-					Ammo.destroy(t), n.set_m_maxSuspensionTravelCm(1e3), n.set_m_maxSuspensionForce(1e6), n.set_m_suspensionStiffness(50), n.set_m_wheelsDampingRelaxation(5), n.set_m_wheelsDampingCompression(200), n.set_m_frictionSlip(3), n.set_m_rollInfluence(1)
+					Ammo.destroy(t), n.set_m_maxSuspensionTravelCm(1e3), n.set_m_maxSuspensionForce(1e6), n.set_m_suspensionStiffness(50), n.set_m_wheelsDampingRelaxation(5), n.set_m_wheelsDampingCompression(200), n.set_m_frictionSlip(3), n.set_m_rollInfluence(2)
 				})), Ammo.destroy(g), Ammo.destroy(v);
 				const w = new Ammo.btTransform;
 				w.setIdentity();
@@ -19544,7 +19544,7 @@
 			gw = Math.cos(70 * ge.DEG2RAD);
 		class vw extends ie {
 			constructor(e, i) {
-				super(), this.object = e, this.domElement = i, this.domElement.style.touchAction = "none", this.enabled = !0, this.target = new Ge, this.minDistance = 0, this.maxDistance = 1 / 0, this.minZoom = 0, this.maxZoom = 1 / 0, this.minPolarAngle = 0, this.maxPolarAngle = Math.PI, this.minAzimuthAngle = -1 / 0, this.maxAzimuthAngle = 1 / 0, this.enableDamping = !1, this.dampingFactor = .05, this.enableZoom = !0, this.zoomSpeed = 1, this.enableRotate = !0, this.rotateSpeed = 1, this.enablePan = !0, this.panSpeed = 1, this.screenSpacePanning = !0, this.keyPanSpeed = 7, this.zoomToCursor = !1, this.autoRotate = !1, this.autoRotateSpeed = 2, this.keys = {
+				super(), this.object = e, this.domElement = i, this.domElement.style.touchAction = "none", this.enabled = !0, this.target = new Ge, this.minDistance = 0, this.maxDistance = 1 / 0, this.minZoom = 0, this.maxZoom = 1 / 0, this.minPolarAngle = 0, this.maxPolarAngle = Math.PI, this.minAzimuthAngle = -1 / 0, this.maxAzimuthAngle = 1 / 0, this.enableDamping = !1, this.dampingFactor = 0, this.enableZoom = !0, this.zoomSpeed = 1, this.enableRotate = !0, this.rotateSpeed = 1, this.enablePan = !0, this.panSpeed = 1, this.screenSpacePanning = !0, this.keyPanSpeed = 7, this.zoomToCursor = !1, this.autoRotate = !1, this.autoRotateSpeed = 2, this.keys = {
 					LEFT: "ArrowLeft",
 					UP: "ArrowUp",
 					RIGHT: "ArrowRight",
